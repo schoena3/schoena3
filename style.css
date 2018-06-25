@@ -1,0 +1,89 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+/*
+.grid-box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100px 500px 100px 250px;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.box1 {
+  background: red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.box2 {
+  background: black;
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.box3 {
+  background: blue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.box4 {
+  background: green;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+*/
+
+.grid-box {
+  margin: auto;
+  width: 950px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100px 500px 100px 250px;
+  grid-template-rows: 20% 10% 60% 10%;
+  grid-template-areas:
+        "header header header header"
+        "menu menu menu menu"
+        "content content content content"
+        "footer footer footer footer"
+
+}
+
+.box1 {
+  background: red;
+  grid-area: header;
+}
+
+.box2 {
+  background: black;
+  color: white;
+  grid-area: menu;
+}
+
+.box3 {
+  background: blue;
+  grid-area: content;
+}
+
+.box4 {
+  background: green;
+  grid-area: footer;
+}
+
+.nav {
+  display: block;
+}
